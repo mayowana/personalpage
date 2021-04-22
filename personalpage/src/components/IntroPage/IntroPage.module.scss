@@ -10,16 +10,14 @@
     h1 {
         font-family: 'Lato';
         text-align: center;
-        padding-top: 2.5rem;
-        position: absolute;
-        left: 25%;
-        z-index: 100;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
 .cardbox {
     display: flex;
-    height: 100vh;
+    height: 90vh;
 }
 
 .box1, .box2 {
@@ -29,6 +27,11 @@
     align-items: center;
     width: 50%;
     filter: grayscale(100%);
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
     &:hover {
         filter: grayscale(0);
@@ -46,9 +49,11 @@
 };
 
 .box1 {
-    background-color: #E9C46A;
+    background-color: #0048BA;
+    color: white;
 }
 
 .box2 {
-    background-color: #2A9D8F;
+    background-color: #C46210;
+    color: white;
 }
