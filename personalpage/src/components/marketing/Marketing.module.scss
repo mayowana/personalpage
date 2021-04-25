@@ -1,3 +1,7 @@
+html {
+    font-family: 'Lato';
+}
+
 header {
     height: 100vh;
     background-image: url('../media/back10.jpg');
@@ -54,4 +58,44 @@ nav {
 
 .buffer {
     width: 50%;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+
+    img {
+        max-width: 60%;    
+    }
+}
+
+.abouttext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #edb3af;
+    padding: 0 2rem;
+    color: #191919;
+
+    h3 {
+        font-size: 225%;
+        padding-bottom: 2rem;
+    }
+
+    p {
+        font-size: 125%;
+    }
+
+    button {
+        width: 25%;
+        margin-top: 3rem;
+        padding: 0.75rem 0;
+        background-color: #edb3af;
+        border: 2px solid #191919;
+        border-radius: 5em;
+    }
+}
+
+.skills {
+    background-color: #a7d7db;
 }
