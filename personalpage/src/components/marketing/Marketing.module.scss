@@ -1,3 +1,10 @@
+header {
+    height: 100vh;
+    background-image: url('../media/back10.jpg');
+    background-size: cover;
+    background-position: 100% 15%;
+}
+
 nav {
     height: 6rem;
     width: 75%;
@@ -21,5 +28,30 @@ nav {
 
     li {
         padding-left: 3rem;
+        font-weight: bold;
     }
+}
+
+.hero {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    height: calc(100vh - 6rem);
+}
+
+.herotext {
+    
+    h2 {
+        font-size: 350%;
+        padding-top: 6rem;
+    }
+
+    p {
+        font-size: 150%;
+        padding-top: 3rem;
+    }
+}
+
+.buffer {
+    width: 50%;
 }
