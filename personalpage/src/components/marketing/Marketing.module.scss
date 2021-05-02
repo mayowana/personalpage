@@ -34,6 +34,13 @@ nav {
         padding-left: 3rem;
         font-weight: bold;
     }
+
+    a {
+        padding-left: 3rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .hero {
@@ -97,7 +104,7 @@ nav {
 }
 
 .skills {
-    background-color: #a7d7db;
+    background-image: linear-gradient(#C0E8D5, #edb3af,);
 
     h3 {
         padding-top: 3rem;
@@ -156,5 +163,78 @@ nav {
         &:hover {
             filter: grayscale(0%);
         }
+    }
+}
+
+.testimonials {
+    background-color: #edb3af;
+    color: black;
+
+    h3 {
+        font-size: 200%;
+        text-align: center;
+        padding: 3rem 0;
+    }
+}
+
+.quotebody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.quotetext {
+    margin: 0 2rem 3.5rem;
+}
+
+.part1 {
+    font-size: 150%;
+    margin-bottom: 2rem;
+}
+
+.part2 {
+    font-style: italic;
+}
+
+.arrow {
+    font-size: 500%;
+}
+
+.contact {
+    background-color: #C0E8D5;
+
+    h3 {
+        font-size: 200%;
+        text-align: center;
+        padding: 3rem 0;
+    }
+}
+
+.contactbox {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    
+    a {
+        padding: 1rem 0;
     }
 }

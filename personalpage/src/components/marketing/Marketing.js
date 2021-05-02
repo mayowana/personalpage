@@ -1,22 +1,59 @@
+import { useState } from "react";
 import styles from "./Marketing.module.scss";
+import {Link} from 'react-router-dom'
 import logo from "../media/pagelogo.png";
 import pic1 from "../media/pic2.jpg";
-import pic3 from '../media/pic3.jpeg';
-import pic5 from '../media/pic5.jpeg';
-import pic6 from '../media/pic6.png';
-import pic7 from '../media/pic7.jpg';
-import nobs from '../media/360nobs10.png';
-import google from '../media/google10.png';
-import lenovo from '../media/lenovo10.png';
-import neu from '../media/neu10.png';
-import promasidor from '../media/promasidor10.png';
-import samsung from '../media/samsung10.png';
-import tecno from '../media/tecno10.png';
-import riby from '../media/riby10.png';
-
-
+import pic3 from "../media/pic3.jpeg";
+import pic5 from "../media/pic5.jpeg";
+import pic6 from "../media/pic6.png";
+import pic7 from "../media/pic7.jpg";
+import nobs from "../media/360nobs10.png";
+import google from "../media/google10.png";
+import lenovo from "../media/lenovo10.png";
+import neu from "../media/neu10.png";
+import promasidor from "../media/promasidor10.png";
+import samsung from "../media/samsung10.png";
+import tecno from "../media/tecno10.png";
+import riby from "../media/riby10.png";
+import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
+import {GrMail, GrLinkedin, GrTwitter} from 'react-icons/gr';
 
 const Marketing = () => {
+  const [number, setNum] = useState(0);
+  function frontquote() {
+    if (number < 2) {
+      setNum(number + 1);
+    } else {
+      setNum(0);
+    }
+  }
+
+  function backquote() {
+    if (number > 0) {
+      setNum(number - 1);
+    } else {
+      setNum(2);
+    }
+  }
+
+  const quotes = [
+    {
+      person: "Oye Akideinde - co-founder, 360nobs.",
+      quote:
+        "Working with Mayowa was very impactful. His expertise in creating great content strategies was instrumental to our rise as one of the top media companies in Nigeria.",
+    },
+    {
+      person: "Abolore Salami - Founder/CEO, Riby.",
+      quote:
+        "Mayowa worked with us between 2017 and 2020, and in that time, I was able to see his skills in marketing and sales strategy, as well as product marketing. He's a unique talent in the B2B SaaS market.",
+    },
+    {
+      person: "Kwame Boler - CEO, neu",
+      quote:
+        "Mayowa is loved and revered by his colleagues and co-workers. His energetic and determined nature to create solutions makes him a valuable member to any team.",
+    },
+  ];
+
   return (
     <>
       <div>
@@ -27,7 +64,7 @@ const Marketing = () => {
             </div>
             <div>
               <ul className={styles.navlist}>
-                <li>ABOUT</li>
+                <Link to='/marketing/about'>ABOUT</Link>
                 <li>SERVICES</li>
                 <li>WORK</li>
               </ul>
@@ -110,17 +147,49 @@ const Marketing = () => {
         </section>
 
         <section className={styles.history}>
-                <h3>I've been honored to work with the following brands in multiple capacities: </h3>
-            <div className={styles.clients}>
-                <img src={nobs} alt='360Nobs'></img>
-                <img src={google} alt='Google'></img>
-                <img src={lenovo} alt='Lenovo'></img>
-                <img src={neu} alt='neu'></img>
-                <img src={promasidor} alt='Promasidor'></img>
-                <img src={riby} alt='Riby'></img>
-                <img src={samsung} alt='Samsung'></img>
-                <img src={tecno} alt='Tecno'></img>
+          <h3>
+            I've been honored to work with the following brands in multiple
+            capacities:{" "}
+          </h3>
+          <div className={styles.clients}>
+            <img src={nobs} alt="360Nobs"></img>
+            <img src={google} alt="Google"></img>
+            <img src={lenovo} alt="Lenovo"></img>
+            <img src={neu} alt="neu"></img>
+            <img src={promasidor} alt="Promasidor"></img>
+            <img src={riby} alt="Riby"></img>
+            <img src={samsung} alt="Samsung"></img>
+            <img src={tecno} alt="Tecno"></img>
+          </div>
+        </section>
+
+        <section className={styles.testimonials}>
+          <h3>The proof is in the pudding</h3>
+          <div className={styles.quotebody}>
+            <AiOutlineDoubleLeft className={styles.arrow} onClick={backquote}/>
+            <div className={styles.quotetext}>
+              <p className={styles.part1}>{quotes[number].quote}</p>
+              <p className={styles.part2}>{quotes[number].person}</p>
             </div>
+            <AiOutlineDoubleRight
+              className={styles.arrow}
+              onClick={frontquote}
+            />
+          </div>
+        </section>
+
+        <section className={styles.contact}>
+                <h3>Would you like to discuss anything at all?</h3>
+                <div className={styles.contactbox}> 
+                    <div className={styles.socials}>
+                     <a href="mailto:themayowageorge@gmail.com"> <GrMail /> Email: themayowageorge@gmail.com</a>
+                     <a href="https://www.linkedin.com/in/mayowageorge/"> <GrLinkedin /> LinkedIn: Oluwamayowa George</a>
+                     <a href="https://twitter.com/Wana____"> <GrTwitter /> Twitter: @Wana____</a>
+                    </div>
+                    <div className={styles.resume}>
+                        <a href="/">Click to download my resume.</a>
+                    </div>
+                </div>
         </section>
       </div>
     </>
