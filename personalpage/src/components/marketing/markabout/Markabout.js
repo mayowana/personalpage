@@ -58,12 +58,21 @@ const Markabout = () => {
           </div>
         </section>
 
-        <section>
-            <div>
+        <section className={styles.edusection}>
+            <div className={styles.edubox}>
                 <h3>Education and Certifications</h3>
-                <div>
-                    <div><p>I have a Bachelor's degree in Anatomy from the University of Ilorin and a Master's Degree in Anatomy from the University of Lagos. </p></div>
-                    <div></div>
+                <div className={styles.edu}>
+                    <ul>
+                        <li>B.Sc Anatomy, University of Ilorin, 2011.</li>
+                        <li>M.Sc Anatomy, University of Lagos, 2014.</li>
+                        <li>Google Adwords, 2016. </li>
+                        <li>Advanced Google Analytics, 2019.</li>
+                        <li>Google Fundamentals of Digital Marketing, 2019.</li>
+                        <li>Microsoft Advertising Certified Professional, 2021.</li>
+                    </ul>
+                </div>
+                <div className={styles.resume}>
+                    <a href='/'><button>DOWNLOAD MY RESUME</button></a>
                 </div>
             </div>
         </section>

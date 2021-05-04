@@ -93,3 +93,41 @@ nav {
     }
 }
 
+.edusection {
+    background-color: #7802E6;
+    color: white;
+}
+
+.edubox {
+    width: 75%;
+    margin: 0 auto;
+
+    h3 {
+        padding: 3rem 0;
+        text-align: center;
+    }
+}
+
+.edu {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 5rem;
+
+        li {
+            margin: 1rem 1rem;
+            width: 30%;
+        }
+    }
+}
+
+.resume {
+    
+    button {
+        background-color: #7802E6;
+        color: white;
+        border: 2px solid white;
+        padding: 0.75rem;
+    }
+}

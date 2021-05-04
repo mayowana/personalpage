@@ -67,51 +67,15 @@ nav {
     width: 50%;
 }
 
-.about {
-    height: 100vh;
-    display: flex;
-
-    img {
-        max-width: 60%;    
-    }
-}
-
-.abouttext {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #edb3af;
-    padding: 0 2rem;
-    color: #191919;
-
-    h3 {
-        font-size: 225%;
-        padding-bottom: 2rem;
-    }
-
-    p {
-        font-size: 125%;
-    }
-
-    button {
-        width: 25%;
-        margin-top: 3rem;
-        padding: 0.75rem 0;
-        background-color: #edb3af;
-        border: 2px solid #191919;
-        border-radius: 5em;
-    }
-}
-
 .skills {
-    background-image: linear-gradient(#C0E8D5, #edb3af,);
+    background-color: #e2c9c5;
+    border-top: 2px solid black;
 
     h3 {
-        padding-top: 3rem;
+        padding-top: 5rem;
         padding-bottom: 3rem;
         font-size: 200%;
         text-align: center;
-        font-style: italic;
     }
 
     p {
@@ -124,13 +88,17 @@ nav {
 .skillcards {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .skillcard {
-    width: 20%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     img {
-        width: 100%;
+        width: 75%;
         padding: 1rem 0;
     }
 
@@ -167,8 +135,9 @@ nav {
 }
 
 .testimonials {
-    background-color: #edb3af;
+    background-color: #C0E8D5;
     color: black;
+    border-top: 2px solid black;
 
     h3 {
         font-size: 200%;
@@ -213,12 +182,11 @@ nav {
 }
 
 .contactbox {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     padding-bottom: 4rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
     a {
         text-decoration: none;
@@ -232,9 +200,8 @@ nav {
 
 .socials {
     display: flex;
-    flex-direction: column;
     
     a {
-        padding: 1rem 0;
+        padding: 0 1rem;
     }
 }

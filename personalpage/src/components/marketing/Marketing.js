@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./Marketing.module.scss";
 import {Link} from 'react-router-dom'
 import logo from "../media/pagelogo.png";
-import pic1 from "../media/pic2.jpg";
 import pic3 from "../media/pic3.jpeg";
 import pic5 from "../media/pic5.jpeg";
 import pic6 from "../media/pic6.png";
@@ -16,7 +15,7 @@ import samsung from "../media/samsung10.png";
 import tecno from "../media/tecno10.png";
 import riby from "../media/riby10.png";
 import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
-import {GrMail, GrLinkedin, GrTwitter} from 'react-icons/gr';
+import {GrMail, GrLinkedin, GrTwitter, GrInstagram} from 'react-icons/gr';
 
 const Marketing = () => {
   const [number, setNum] = useState(0);
@@ -84,25 +83,9 @@ const Marketing = () => {
             <div className={styles.buffer}></div>
           </div>
         </header>
-        <section className={styles.about}>
-          <img src={pic1} alt="marketing audience"></img>
-
-          <div className={styles.abouttext}>
-            <h3>What you sell matters. How you sell it matters more.</h3>
-            <p>
-              In today's fast-moving world, there are numerous brands vying for
-              the attention of the same audience you're trying to reach.
-              <br></br>
-              <br></br>Success in marketing requires understanding your
-              customer, and creating a unique experience for them. You need
-              skilled marketers to carry out these plans, and that's where I
-              come in.
-            </p>
-          </div>
-        </section>
 
         <section className={styles.skills}>
-          <h3>A bouquet of valuable skills, just for you.</h3>
+          <h3>WHAT I DO</h3>
           <p>
             With over 10 years of experience in Marketing, I have valuable
             experience and skills in the following:
@@ -164,7 +147,7 @@ const Marketing = () => {
         </section>
 
         <section className={styles.testimonials}>
-          <h3>The proof is in the pudding</h3>
+          <h3>TESTIMONIALS</h3>
           <div className={styles.quotebody}>
             <AiOutlineDoubleLeft className={styles.arrow} onClick={backquote}/>
             <div className={styles.quotetext}>
@@ -178,19 +161,17 @@ const Marketing = () => {
           </div>
         </section>
 
-        <section className={styles.contact}>
-                <h3>Would you like to discuss anything at all?</h3>
+        <footer className={styles.contact}>
                 <div className={styles.contactbox}> 
                     <div className={styles.socials}>
-                     <a href="mailto:themayowageorge@gmail.com"> <GrMail /> Email: themayowageorge@gmail.com</a>
-                     <a href="https://www.linkedin.com/in/mayowageorge/"> <GrLinkedin /> LinkedIn: Oluwamayowa George</a>
-                     <a href="https://twitter.com/Wana____"> <GrTwitter /> Twitter: @Wana____</a>
+                     <a href="mailto:themayowageorge@gmail.com"> <GrMail /></a>
+                     <a href="https://www.linkedin.com/in/mayowageorge/"> <GrLinkedin /></a>
+                     <a href="https://twitter.com/Wana____"> <GrTwitter /></a>
+                     <a href="https://www.instagram.com/wana____/"> <GrInstagram /></a>
                     </div>
-                    <div className={styles.resume}>
-                        <a href="/">Click to download my resume.</a>
-                    </div>
+                    <div className={styles.copyright}> ©2021 Oluwamayowa George. All rights reserved. </div>
                 </div>
-        </section>
+        </footer>
       </div>
     </>
   );
