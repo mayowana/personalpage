@@ -58,14 +58,14 @@ const Marketing = () => {
       <div>
         <header className={styles.header}>
           <nav>
-            <div className={styles.logobox}>
+            <Link to='/' className={styles.logobox}>
               <img src={logo} alt="logo"></img>
-            </div>
+            </Link>
             <div>
               <ul className={styles.navlist}>
                 <Link to='/marketing/about'>ABOUT</Link>
-                <li>SERVICES</li>
-                <li>WORK</li>
+                <Link to='/blog'>BLOG</Link>
+                <Link to='/contact'>CONTACT</Link>
               </ul>
             </div>
           </nav>

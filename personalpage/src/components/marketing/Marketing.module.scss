@@ -40,6 +40,10 @@ nav {
         font-weight: bold;
         text-decoration: none;
         color: black;
+
+        &:active {
+            color: red;
+        }
     }
 }
 
@@ -138,6 +142,7 @@ nav {
     background-color: #C0E8D5;
     color: black;
     border-top: 2px solid black;
+    border-bottom: 2px solid black;
 
     h3 {
         font-size: 200%;
@@ -173,6 +178,7 @@ nav {
 
 .contact {
     background-color: #C0E8D5;
+    padding-top: 3rem;
 
     h3 {
         font-size: 200%;
