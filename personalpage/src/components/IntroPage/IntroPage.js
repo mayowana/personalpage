@@ -1,6 +1,7 @@
 import styles from "./IntroPage.module.scss";
 import box1 from "../media/box1.png";
 import box2 from "../media/box2.png";
+import {Link} from 'react-router-dom';
 
 const IntroPage = () => {
   return (
@@ -8,17 +9,17 @@ const IntroPage = () => {
       <div className={styles.mainpage}>
         <h1>Hi! This is Mayowa George. Who would you like to meet?</h1>
         <div className={styles.cardbox}>
-          <div className={styles.box1}>
+          <Link to='/marketing' className={styles.box1}>
             <img src={box1} alt=""></img>
-            <a href='/marketing'><h3>Content & Growth Marketer</h3></a>
-          </div>
-          <div className={styles.box2}>
+            <h3>Content & Growth Marketer</h3>
+          </Link>
+          <Link to='/programming' className={styles.box2}>
             <img src={box2} alt=""></img>
-            <a href='programming'><h3>Front End Developer</h3></a>
-          </div>
+            <h3>Front End Developer</h3>
+          </Link>
         </div>
       </div>
-    </>
+    </> 
   );
 };
 

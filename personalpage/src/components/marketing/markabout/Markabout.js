@@ -8,15 +8,15 @@ const Markabout = () => {
     <>
       <div>
         <header className={styles.abouthead}>
-          <nav>
-            <div className={styles.logobox}>
+        <nav>
+            <Link to='/' className={styles.logobox}>
               <img src={logo} alt="logo"></img>
-            </div>
+            </Link>
             <div>
               <ul className={styles.navlist}>
-                <Link to={Markabout}>ABOUT</Link>
-                <li>SERVICES</li>
-                <li>WORK</li>
+                <Link to='/marketing/'>MARKETING</Link>
+                <Link to='/blog'>BLOG</Link>
+                <Link to='/contact'>CONTACT</Link>
               </ul>
             </div>
           </nav>
