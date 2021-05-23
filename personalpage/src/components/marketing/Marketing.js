@@ -61,18 +61,16 @@ const Marketing = () => {
             <Link to='/' className={styles.logobox}>
               <img src={logo} alt="logo"></img>
             </Link>
-            <div>
               <ul className={styles.navlist}>
                 <Link to='/marketing/about'>ABOUT</Link>
                 <Link to='/blog'>BLOG</Link>
-                <Link to='/contact'>CONTACT</Link>
+                 <Link to='/contact'>CONTACT</Link>
               </ul>
-            </div>
           </nav>
           <div className={styles.hero}>
             <div className={styles.herotext}>
               <h2>
-                Marketing that works,<br></br> from Strategy to Execution.
+                Marketing that works, from Strategy to Execution.
               </h2>
               <p>
                 I'm a full-stack marketer with expertise in Product, Digital,
@@ -132,7 +130,7 @@ const Marketing = () => {
         <section className={styles.history}>
           <h3>
             I've been honored to work with the following brands in multiple
-            capacities:{" "}
+            capacities:
           </h3>
           <div className={styles.clients}>
             <img src={nobs} alt="360Nobs"></img>

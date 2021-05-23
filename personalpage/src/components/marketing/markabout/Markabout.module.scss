@@ -121,7 +121,7 @@ nav {
         }
     }
 }
-
+ 
 .resume {
     text-align: center;
     padding-bottom: 4rem;
@@ -133,4 +133,70 @@ nav {
         padding: 0.75rem;
         margin: 0 auto;
     }
+}
+
+@media only screen and (max-width: 1024px) {
+    .abouthead {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .edu {
+
+        ul {
+            justify-content: space-between;
+    
+            li {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .abouthead {
+        height: 100vh;
+    }
+
+    .abouttext {
+        margin-right: 0;
+    }
+
+    .navlist {
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+    
+        a {
+          padding-left: 0;
+        }
+      }
+}
+
+@media screen and (max-width: 415px) {
+    .abouttext{
+        padding-top: 3rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .bio {
+        flex-direction: column;
+    }
+
+    .biobox {
+        width: 100%;
+
+        img {
+            margin: 0 auto;
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .textbox {
+        width: 100%;
+        padding-bottom: 1rem auto;
+    }
+
 }

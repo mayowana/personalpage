@@ -72,11 +72,11 @@ const Markabout = () => {
                     </ul>
                 </div>
                 <div className={styles.resume}>
-                    <a href='/'><button>DOWNLOAD MY RESUME</button></a>
+                    <a href='https://drive.google.com/file/d/17NFXrlKMAdxHw69zTmUIhFVf1eEHqoc8/view?usp=sharing'><button>VIEW MY RESUME</button></a>
                 </div>
             </div>
         </section>
-      </div>
+      </div> 
     </>
   );
 };

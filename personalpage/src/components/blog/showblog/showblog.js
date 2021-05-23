@@ -29,7 +29,7 @@ const ShowBlog = () => {
           console.log('test1', response.posts)
         },
       );
-  }, [])
+  }, )
 
   console.log('test2', response);
   const showposts = response.posts.map((posts, index) => <Blogpost key={index} postlink={posts.link} thumb={posts.thumbnail} title={posts.title}></Blogpost>)

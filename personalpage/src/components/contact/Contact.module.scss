@@ -110,3 +110,47 @@ nav {
         }
      }
 }
+
+@media screen and (max-width: 768px) {
+    
+    .navlist {
+        padding: 1rem 0;
+        justify-content: space-between;
+        width: 80%;
+
+        a {
+            padding-left: 0;
+        }
+    }
+
+    .contactbody {
+        padding-top: 5rem;
+    }
+
+    .contactform {
+        form {
+            input[type=submit] {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .navlist {
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+
+    .contactbody {
+        flex-direction: column;
+    }
+
+    .contacttext {
+        width: 100%;
+    }
+
+    .contactform {
+        width: 100%;
+    }
+}

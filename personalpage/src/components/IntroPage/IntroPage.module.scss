@@ -53,3 +53,23 @@
     background-color: #C46210;
     color: white;
 }
+
+@media only screen and (max-width: 1024px) {
+    .cardbox {
+        flex-direction: column;
+    }
+
+    .box1, .box2 {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .mainpage {
+
+        h1 {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}

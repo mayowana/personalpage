@@ -11,11 +11,11 @@ const IntroPage = () => {
         <div className={styles.cardbox}>
           <Link to='/marketing' className={styles.box1}>
             <img src={box1} alt=""></img>
-            <h3>Content & Growth Marketer</h3>
+            <h3>The Marketer</h3>
           </Link>
           <Link to='/programming' className={styles.box2}>
             <img src={box2} alt=""></img>
-            <h3>Front End Developer</h3>
+            <h3>The Engineer</h3>
           </Link>
         </div>
       </div>

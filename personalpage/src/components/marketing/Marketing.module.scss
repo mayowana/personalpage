@@ -1,213 +1,292 @@
 html {
-    font-family: 'Lato';
+  font-family: "Lato";
 }
 
 header {
-    height: 100vh;
-    background-image: url('../media/back10.jpg');
-    background-size: cover;
-    background-position: 100% 15%;
+  height: 100vh;
+  background-image: url("../media/back10.jpg");
+  background-size: cover;
+  background-position: 100% 15%;
 }
 
 nav {
-    height: 6rem;
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 6rem;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logobox {
-    height: 6rem;
+  height: 6rem;
 
-    img {
-        height: 100%;
-    }
+  img {
+    height: 100%;
+  }
 }
 
 .navlist {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 
-    li {
-        padding-left: 3rem;
-        font-weight: bold;
+  li {
+    padding-left: 3rem;
+    font-weight: bold;
+  }
+
+  a {
+    padding-left: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+    &:active {
+      color: red;
     }
+  }
+}
 
-    a {
-        padding-left: 3rem;
-        font-weight: bold;
-        text-decoration: none;
-        color: black;
-
-        &:active {
-            color: red;
-        }
-    }
+.hamburger {
+  display: none;
 }
 
 .hero {
-    display: flex;
-    width: 75%;
-    margin: 0 auto;
-    height: calc(100vh - 6rem);
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  height: calc(100vh - 6rem);
 }
 
 .herotext {
-    
-    h2 {
-        font-size: 350%;
-        padding-top: 6rem;
-    }
+  h2 {
+    font-size: 350%;
+    padding-top: 6rem;
+  }
 
-    p {
-        font-size: 150%;
-        padding-top: 3rem;
-    }
+  p {
+    font-size: 150%;
+    padding-top: 3rem;
+  }
 }
 
 .buffer {
-    width: 50%;
+  width: 50%;
 }
 
 .skills {
-    background-color: #e2c9c5;
-    border-top: 2px solid black;
+  background-color: #e2c9c5;
+  border-top: 2px solid black;
 
-    h3 {
-        padding-top: 5rem;
-        padding-bottom: 3rem;
-        font-size: 200%;
-        text-align: center;
-    }
+  h3 {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-size: 200%;
+    text-align: center;
+  }
 
-    p {
-        text-align: center;
-        font-size: 125%;
-        padding-bottom: 3rem;
-    }
+  p {
+    text-align: center;
+    font-size: 125%;
+    padding-bottom: 3rem;
+  }
 }
 
 .skillcards {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .skillcard {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    img {
-        width: 75%;
-        padding: 1rem 0;
-    }
+  img {
+    width: 75%;
+    padding: 1rem 0;
+  }
 
-    h4 {
-        font-size: 150%;
-        text-align: center;
-    }
+  h4 {
+    font-size: 150%;
+    text-align: center;
+  }
 }
 
 .history {
-    background-color: #C0E8D5;
+  background-color: #c0e8d5;
 
-    h3 {
-        font-size: 150%;
-        text-align: center;
-        padding-top: 3rem;
-    }
+  h3 {
+    font-size: 150%;
+    text-align: center;
+    padding-top: 3rem;
+  }
 }
 
 .clients {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-    img {
-        width: 22%;
-        height: 300px;
-        filter: grayscale(100%);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 
-        &:hover {
-            filter: grayscale(0%);
-        }
+  img {
+    width: 22%;
+    height: 300px;
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: grayscale(0%);
     }
+  }
 }
 
 .testimonials {
-    background-color: #C0E8D5;
-    color: black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+  background-color: #c0e8d5;
+  color: black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 
-    h3 {
-        font-size: 200%;
-        text-align: center;
-        padding: 3rem 0;
-    }
+  h3 {
+    font-size: 200%;
+    text-align: center;
+    padding: 3rem 0;
+  }
 }
 
 .quotebody {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .quotetext {
-    margin: 0 2rem 3.5rem;
+  margin: 0 2rem 3.5rem;
 }
 
 .part1 {
-    font-size: 150%;
-    margin-bottom: 2rem;
+  font-size: 150%;
+  margin-bottom: 2rem;
 }
 
 .part2 {
-    font-style: italic;
+  font-style: italic;
 }
 
 .arrow {
-    font-size: 500%;
+  font-size: 500%;
 }
 
 .contact {
-    background-color: #C0E8D5;
-    padding-top: 3rem;
+  background-color: #c0e8d5;
+  padding-top: 3rem;
 
-    h3 {
-        font-size: 200%;
-        text-align: center;
-        padding: 3rem 0;
-    }
+  h3 {
+    font-size: 200%;
+    text-align: center;
+    padding: 3rem 0;
+  }
 }
 
 .contactbox {
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 4rem;
-    display: flex;
-    justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
 
-    a {
-        text-decoration: none;
-        color: black;
+  a {
+    text-decoration: none;
+    color: black;
 
-        &:hover {
-            color: red;
-        }
+    &:hover {
+      color: red;
     }
+  }
 }
 
 .socials {
-    display: flex;
-    
-    a {
-        padding: 0 1rem;
+  display: flex;
+
+  a {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 85%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 250%;
     }
+  }
+
+  .clients {
+    img {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 100vh;
+    background-position: 1% 70%;
+  }
+
+  nav {
+    width: 85%;
+    flex-direction: column;
+  }
+
+  
+
+  .logobox {
+    height: 4rem;
+    img {
+      height: 100%;
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .skillcards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillcard {
+    width: 75%;
+  }
+
+  .clients {
+    img {
+      width: 45%;
+    }
+  }
+
+  .quotebody {
+      width: 90%;
+  }
+
+  .contactbox {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .socials {
+      padding-bottom: 2rem;
+  }
 }

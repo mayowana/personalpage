@@ -12,7 +12,6 @@ const Blog = () => {
             <Link to="/" className={styles.logobox}>
               <img src={logo} alt="logo"></img>
             </Link>
-            <div>
               <ul className={styles.navlist}>
                 <NavLink to="/marketing/" activeStyle={{ color: "red" }}>
                   MARKETING
@@ -24,7 +23,6 @@ const Blog = () => {
                   BLOG
                 </NavLink>
               </ul>
-            </div>
           </nav>
         </div>
         <div className={styles.subscribe}>
