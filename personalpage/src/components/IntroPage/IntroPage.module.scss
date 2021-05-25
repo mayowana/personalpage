@@ -2,74 +2,205 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway';
 }
 
 .mainpage {
     height: 100vh;
-
-    h1 {
-        font-family: 'Lato';
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-}
-
-.cardbox {
-    display: flex;
-    height: 90vh;
-}
-
-.box1, .box2 {
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    filter: grayscale(100%);
-    text-decoration: none;
+
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 500%;
+        padding-bottom: 3rem;
+    }
+}
+
+.mainpage2 {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        color: black;
+        font-size: 500%;
+        padding-bottom: 3rem;
+    }
+}
+
+
+
+.icons {
+    color: white;
+    position: fixed;
+    top: 3rem;
+    left: 3rem;
+}
+
+.icons2 {
+    color: black;
+    position: fixed;
+    top: 3rem;
+    left: 3rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 0 1rem;
+        width: 10rem;
+        text-align: center;
+    }
+}
+
+.link1 {
+    border: 3px solid;
+    border-image-source: linear-gradient(to right, #B0BF1A, #7CB9E8);
+    border-image-slice: 1;
+    border-width: 3px;
+    color: white;
 
     &:hover {
-        filter: grayscale(0);
+        background-color: white;
+        color: black;
+        border: 3px solid black;
     }
+}
 
-    img {
-        height: 70%;
-        width: 50%;
-        margin-top: 2rem;
-    }
+.link1a {
+        border: 3px solid;
+        border-image-source: linear-gradient(to right, #0048BA, #9F2B68);
+        border-image-slice: 1;
+        border-width: 3px;
+        color: black;
+    
+        &:hover {
+            background-color: black;
+            color: white;
+            border: 3px solid white;
+        }
+}
 
-    h3 {
-        padding-top: 1rem;
-    }
-};
-
-.box1 {
-    background-color: #0048BA;
+.link2 {
+    border: 3px solid;
+    border-image-source: linear-gradient(to right, #7CB9E8, #C0E8D5);
+    border-image-slice: 1;
+    border-width: 3px;
     color: white;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 3px solid black;
+    }
 }
 
-.box2 {
-    background-color: #C46210;
+.link2b {
+    border: 3px solid;
+    border-image-source: linear-gradient(to right, #9F2B68, #AB274F);
+    border-image-slice: 1;
+    border-width: 3px;
+    color: black;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+    }
+}
+
+.link3 {
+    border: 3px solid;
+    border-image-source: linear-gradient(to right, #C0E8D5, #B284BE);
+    border-image-slice: 1;
+    border-width: 3px;
     color: white;
-}
 
-@media only screen and (max-width: 1024px) {
-    .cardbox {
-        flex-direction: column;
-    }
-
-    .box1, .box2 {
-        width: 100vw;
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 3px solid black;
     }
 }
 
-@media only screen and (max-width: 414px) {
-    .mainpage {
+.link3b {
+    border: 3px solid;
+    border-image-source: linear-gradient(to right, #AB274F, #D3212D);
+    border-image-slice: 1;
+    border-width: 3px;
+    color: black;
 
+    &:hover {
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+    }
+}
+
+.link4 {
+    border: 3px solid;
+    border-image-source: linear-gradient(to right, #B284BE, #72A0C1);
+    border-image-slice: 1;
+    border-width: 3px;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 3px solid black;
+    }
+}
+
+.link4b {
+    border: 3px solid;
+    border-image-source: linear-gradient(to right, #D3212D, #3B7A57);
+    border-image-slice: 1;
+    border-width: 3px;
+    color: black;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .mainpage, .mainpage2 {
         h1 {
-            width: 90%;
-            margin: 0 auto;
+            font-size: 400%;
         }
     }
 }
+
+@media screen and (max-width: 420px) {
+    .mainpage, .mainpage2 {
+        h1 {
+            font-size: 200%;
+        }
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .link2, .link2b, .link3, .link3b, .link4, .link4b {
+        margin-top: 1rem !important;
+    }
+}
+
+
+

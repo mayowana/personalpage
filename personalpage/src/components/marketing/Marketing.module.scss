@@ -2,13 +2,6 @@ html {
   font-family: "Lato";
 }
 
-header {
-  height: 100vh;
-  background-image: url("../media/back10.jpg");
-  background-size: cover;
-  background-position: 100% 15%;
-}
-
 nav {
   height: 6rem;
   width: 75%;
@@ -249,8 +242,6 @@ nav {
     flex-direction: column;
   }
 
-  
-
   .logobox {
     height: 4rem;
     img {
@@ -288,5 +279,15 @@ nav {
 
   .socials {
       padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .navlist {
+    width: 100vw;
+
+    a {
+      padding-left: 0;
+    }
   }
 }
