@@ -71,7 +71,10 @@
     border-image-source: linear-gradient(to right, #B0BF1A, #7CB9E8);
     border-image-slice: 1;
     border-width: 3px;
-    color: white;
+
+    p {
+        color: white;
+    }
 
     &:hover {
         background-color: white;
