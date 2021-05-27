@@ -17,7 +17,7 @@ const IntroPage = () => {
         <h1>mayowageorge.com</h1>
         <div className={styles.links}>
           <Link to="/about" className={mode ? styles.link1 : styles.link1a}>
-            <p>ABOUT</p>
+            ABOUT
           </Link>
           <Link to="/work" className={mode ? styles.link2 : styles.link2b}>
             WORK
