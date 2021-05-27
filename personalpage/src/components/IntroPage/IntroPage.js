@@ -22,7 +22,11 @@ const IntroPage = () => {
           <Link to="/work" className={mode ? styles.link2 : styles.link2b}>
             WORK
           </Link>
-          <Link to="https://medium.com/@mayowageorge" className={mode ? styles.link3 : styles.link3b}>
+          <Link
+            to={{ pathname: "https://medium.com/@mayowageorge" }}
+            target="_blank"
+            className={mode ? styles.link3 : styles.link3b}
+          >
             BLOG
           </Link>
           <Link to="/contact" className={mode ? styles.link4 : styles.link4b}>

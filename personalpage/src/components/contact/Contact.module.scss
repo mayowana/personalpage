@@ -1,3 +1,9 @@
+.contactbox {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
 .navbox {
     height: 6rem;
     border-bottom: 1px solid black;
@@ -13,32 +19,8 @@ nav {
 }
 
 .logobox {
-    height: 6rem;
-
-    img {
-        height: 100%;
-    }
-}
-
-.navlist {
-    list-style-type: none;
-    display: flex;
-
-    li {
-        padding-left: 3rem;
-        font-weight: bold;
-    }
-
-    a {
-        padding-left: 3rem;
-        font-weight: bold;
-        text-decoration: none;
-        color: black;
-
-        &:active, &:hover {
-            color: red;
-        }
-    }
+    text-decoration: none;
+    color: white;
 }
 
 .contactbody {
@@ -51,8 +33,17 @@ nav {
 .contacttext {
     width: 50%;
     
-    h3 {
+    h2 {
         padding-bottom: 2rem;
+        font-size: 250%;
+        background: -webkit-linear-gradient(#B0BF1A, #7CB9E8);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        font-size: 150%;
     }
 }
 
@@ -64,7 +55,7 @@ nav {
     a {
         padding-bottom: 1rem;
         text-decoration: none;
-        color: black;
+        color: white;
         display: flex;
         align-items: center;
         
@@ -104,9 +95,14 @@ nav {
             width: 30%;
             margin: 0 auto;
             padding: 1rem;
-            color: white;
-            background-color: black;
+            color: black;
+            background-color: white;
             border: none;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #7CB9E8
+            }
         }
      }
 }
@@ -137,10 +133,6 @@ nav {
 }
 
 @media screen and (max-width: 414px) {
-    .navlist {
-        width: 100vw;
-        justify-content: space-evenly;
-    }
 
     .contactbody {
         flex-direction: column;
@@ -148,9 +140,14 @@ nav {
 
     .contacttext {
         width: 100%;
+
+        p {
+            font-size: 100%;
+        }
     }
 
     .contactform {
         width: 100%;
+        padding-bottom: 3rem;
     }
 }

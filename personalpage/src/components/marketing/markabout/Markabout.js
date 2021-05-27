@@ -6,34 +6,35 @@ const Markabout = () => {
     <>
       <div>
         <header className={styles.abouthead}>
-          <nav>
+          <nav className={styles.aboutnav}>
             <Link to="/" className={styles.logobox}>
               <p>Back to home</p>
             </Link>
           </nav>
 
           <div className={styles.abouttext}>
-            <h2>Growth is more than marketing.</h2>
+            <h2 className={styles.headone}>Growth is more than marketing.</h2>
             <p>
               Growth is everything you do to get new customers, keep them using
               your product, and convert them into ambassadors of your business.
             </p>
             <p>
               Succesful growth requires cross-functional collaboration between
-              Marketing, Product, Customer Success, Salaes and Engineering.
+              Marketing, Product, Customer Success, Sales and Engineering.
             </p>
             <p>
-              You would also need a Growth expert - someone with the ability to
+              A Growth expert is also important - someone with the ability to
               understand the peculiarities of your customer, and create
               experiments and tests multiple strategies to make sure you're
               growing at the right pace.
             </p>
 
-            <h2>Who I am.</h2>
+            <h2 className={styles.headtwo}>Who I am.</h2>
 
             <p>
               My name is Oluwamayowa George, a marketing professional with 10
-              years of experience helping companies grow.
+              years of experience in helping startups successfully acquire new
+              customers, launch new products and enter new markets.
             </p>
             <p>
               I've worked in multiple industries from fintech to media to B2B

@@ -13,7 +13,7 @@ function App() {
         <Route exact path="/">
           <IntroPage />
         </Route>
-        <Route exact path="/marketing">
+        <Route exact path="/work">
           <Marketing />
         </Route>
         <Route exact path="/about">
