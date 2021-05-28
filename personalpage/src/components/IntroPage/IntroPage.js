@@ -24,7 +24,7 @@ const IntroPage = () => {
           </Link>
           <Link
             to={{ pathname: "https://medium.com/@mayowageorge" }}
-            target="_blank"
+            target="_blank" rel="noopener"
             className={mode ? styles.link3 : styles.link3b}
           >
             BLOG

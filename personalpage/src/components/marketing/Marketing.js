@@ -71,12 +71,14 @@ const Marketing = () => {
                 <Link
                   to={{ pathname: "https://github.com/mayowana" }}
                   target="_blank"
+                  rel="noopener"
                 >
                   GitHub
                 </Link>
                 <Link
                   to={{ pathname: "https://www.linkedin.com/in/mayowageorge/" }}
                   target="_blank"
+                  rel="noopener"
                 >
                   LinkedIn
                 </Link>
