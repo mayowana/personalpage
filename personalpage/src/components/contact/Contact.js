@@ -1,16 +1,31 @@
 import styles from "./Contact.module.scss";
+import {useState} from 'react'
 import { Link} from "react-router-dom";
 import emailjs from 'emailjs-com';
 import { GrMail, GrLinkedin, GrTwitter, GrInstagram } from "react-icons/gr";
 
 const Contact = () => {
 
+  const [pname, setPname] = useState('');
+  const [ptext, setPtext] = useState('');
+  const [pmail, setPmail] = useState('');
+
+  const templateParams = {
+    from_name: pname,
+    reply_to: pmail,
+    message: ptext
+  }
+
+
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_12zca0l', 'template_1fhej66', e.target, 'user_FMsHYMaFlZk4nslbxIXu9')
+    emailjs.send('service_12zca0l', 'template_l3yn25o', templateParams, 'user_FMsHYMaFlZk4nslbxIXu9')
       .then((result) => {
-          console.log(result.text);
+        console.log('SUCCESS!', result.status, result.text);
+        setPname('')
+        setPtext('')
+        setPmail('')
       }, (error) => {
           console.log(error.text);
       });
@@ -55,9 +70,9 @@ const Contact = () => {
           </div>
           <div className={styles.contactform}>
               <form onSubmit={sendEmail}>
-                  <input type="text" placeholder="Your name"></input>
-                  <input type="text" placeholder="Your email"></input>
-                  <input type="textarea" placeholder="Your message"></input>
+                  <input type="text" placeholder="Your name" value={pname} onChange={(e) => setPname(e.target.value)}></input>
+                  <input type="text" placeholder="Your email" value={pmail} onChange={(e) => setPmail(e.target.value)}></input>
+                  <input type="textarea" placeholder="Your message" value={ptext} onChange={(e) => setPtext(e.target.value)}></input>
                   <input type="submit" value="Send message"></input>
               </form>
           </div>
