@@ -67,9 +67,12 @@
 }
 
 .link1 {
-    border: 3px solid;
-    border-image-source: linear-gradient(to right, #B0BF1A, #7CB9E8);
+    border-style: solid;
+    border-image: linear-gradient(to right, #B0BF1A, #7CB9E8);
+    -moz-border-image: -moz-linear-gradient(to right, #B0BF1A, #7CB9E8);
+    -webkit-border-image: -webkit-linear-gradient(to right, #B0BF1A, #7CB9E8);
     border-image-slice: 1;
+    -webkit-border-image-slice: 1;
     border-width: 3px;
     color: white;
 
