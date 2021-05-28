@@ -18,7 +18,7 @@ const Marketing = () => {
               <p>
                 I'm a full-stack marketer with expertise in Product, Digital,
                 Content and Growth marketing as well as front-end web
-                development, and the knowledge on how to make work these for
+                development, and the knowledge on how to make these work for
                 your business.
               </p>
               <h2>What I do.</h2>
