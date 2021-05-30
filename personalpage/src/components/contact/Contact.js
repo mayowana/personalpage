@@ -70,9 +70,9 @@ const Contact = () => {
           </div>
           <div className={styles.contactform}>
               <form onSubmit={sendEmail}>
-                  <input type="text" placeholder="Your name" value={pname} onChange={(e) => setPname(e.target.value)}></input>
-                  <input type="text" placeholder="Your email" value={pmail} onChange={(e) => setPmail(e.target.value)}></input>
-                  <input type="textarea" placeholder="Your message" value={ptext} onChange={(e) => setPtext(e.target.value)}></input>
+                  <input type="text" required placeholder="Your name" value={pname} onChange={(e) => setPname(e.target.value)}></input>
+                  <input type="text" required placeholder="Your email" value={pmail} onChange={(e) => setPmail(e.target.value)}></input>
+                  <input type="textarea" required placeholder="Your message" value={ptext} onChange={(e) => setPtext(e.target.value)}></input>
                   <input type="submit" value="Send message"></input>
               </form>
           </div>
