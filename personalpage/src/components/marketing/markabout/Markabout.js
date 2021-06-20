@@ -1,19 +1,21 @@
 import styles from "./Markabout.module.scss";
 import { Link } from "react-router-dom";
+import Themecontext from '../../themecontext/Themecontext'
 
 const Markabout = () => {
   return (
-    <>
-      <div>
-        <header className={styles.abouthead}>
+    <Themecontext.Consumer>
+      {(mode) =>
+      <div mode = {mode}>
+        <header className={mode ? styles.abouthead : styles.abouthead1}>
           <nav className={styles.aboutnav}>
-            <Link to="/" className={styles.logobox}>
+            <Link to="/" className={mode ? styles.logobox : styles.logobox1}>
               <p>Back to home</p>
             </Link>
           </nav>
 
-          <div className={styles.abouttext}>
-            <h2 className={styles.headone}>Growth is more than marketing.</h2>
+          <div className={mode ? styles.abouttext : styles.abouttext1}>
+            <h2 className={mode ? styles.headone : styles.headone1}>Growth is more than marketing.</h2>
             <p>
               Growth is everything you do to get new customers, keep them using
               your product, and convert them into ambassadors of your business.
@@ -71,7 +73,8 @@ const Markabout = () => {
           </div>
         </header>
       </div>
-    </>
+}
+    </Themecontext.Consumer>
   );
 };
 

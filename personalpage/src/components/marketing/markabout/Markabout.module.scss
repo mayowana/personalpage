@@ -4,6 +4,11 @@
     color: white;
 }
 
+.abouthead1 {
+    background-color: white;
+    color: black;
+}
+
 nav {
     height: 6rem;
     width: 75%;
@@ -15,6 +20,10 @@ nav {
 
 .logobox {
     color: white;
+}
+
+.logobox1 {
+    color: black;
 }
 
 .abouttext {
@@ -47,6 +56,38 @@ nav {
     }
 }
 
+.abouttext1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    color: #191919;
+    width: 85%;
+    margin: 0 auto;
+    color: black;
+
+    h2 {
+        font-size: 250%;
+        padding: 2rem 0;
+    }
+
+    p {
+        font-size: 125%;
+        padding: 1rem 0;
+    }
+
+    button {
+        width: 25%;
+        margin-top: 3rem;
+        padding: 0.75rem 0;
+        background-color: #edb3af;
+        border: 2px solid #191919;
+        border-radius: 5em;
+    }
+}
+
+
+
 .headone {
     background: -webkit-linear-gradient(#EDEAE0,#C46210);
         background-clip: text;
@@ -54,40 +95,15 @@ nav {
         -webkit-text-fill-color: transparent;
 }
 
+.headone1 {
+    background: -webkit-linear-gradient(#0048BA,#9F2B68);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
 .bio {
     display: flex;
-}
-
-.biobox {
-    width: 50%;
-    background-color: #E7E0ED;
-    img {
-        margin-left: 5rem;
-    }
-}
-
-.textbox {
-    width: 85%;
-
-    p {
-        padding: 0.5rem 1.5rem;
-        font-size: 150%;
-    }
-}
-
-.edusection {
-    background-color: #7802E6;
-    color: white;
-}
-
-.edubox {
-    width: 75%;
-    margin: 0 auto;
-
-    h3 {
-        padding: 3rem 0;
-        text-align: center;
-    }
 }
 
 .edu {
@@ -152,6 +168,14 @@ nav {
 
 @media screen and (max-width: 415px) {
     .abouttext{
+        padding-top: 3rem;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+
+    .abouttext1{
         padding-top: 3rem;
         width: 90%;
         padding-left: 0;

@@ -4,13 +4,22 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Marketing from "./components/marketing/Marketing";
 import Markabout from "./components/marketing/markabout/Markabout";
 import Contact from './components/contact/Contact'
+import {useState} from 'react';
+import Themecontext from './components/themecontext/Themecontext'
 
 function App() {
+  const [mode, setMode] = useState(false);
+
+  const setTheme = () => {
+    setMode(!mode)
+  }
+
   return (
     <>
+    <Themecontext.Provider value={mode}>
       <Router>
         <Route exact path="/">
-          <IntroPage />
+          <IntroPage setTheme={setTheme} />
         </Route>
         <Route exact path="/work">
           <Marketing />
@@ -20,6 +29,7 @@ function App() {
         </Route>
         <Route exact path='/contact/'><Contact /></Route>
       </Router>
+      </Themecontext.Provider>
     </>
   );
 }

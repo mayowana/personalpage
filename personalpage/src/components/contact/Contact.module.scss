@@ -4,9 +4,21 @@
     min-height: 100vh;
 }
 
+.contactbox1 {
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+}
+
+
 .navbox {
     height: 6rem;
     border-bottom: 1px solid black;
+}
+
+.navbox1 {
+    height: 6rem;
+    border-bottom: 1px solid white;
 }
 
 nav {
@@ -21,6 +33,11 @@ nav {
 .logobox {
     text-decoration: none;
     color: white;
+}
+
+.logobox1 {
+    text-decoration: none;
+    color: black;
 }
 
 .contactbody {
@@ -47,6 +64,23 @@ nav {
     }
 }
 
+.contacttext1 {
+    width: 50%;
+    
+    h2 {
+        padding-bottom: 2rem;
+        font-size: 250%;
+        background: -webkit-linear-gradient(#AB274F, #D3212D);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        font-size: 150%;
+    }
+}
+
 .socialbox {
     display: flex;
     flex-direction: column;
@@ -56,6 +90,28 @@ nav {
         padding-bottom: 1rem;
         text-decoration: none;
         color: white;
+        display: flex;
+        align-items: center;
+        
+        :hover {
+            color: red;
+        }
+
+        p {
+            padding-left: 1rem;
+        }
+    }
+}
+
+.socialbox1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+
+    a {
+        padding-bottom: 1rem;
+        text-decoration: none;
+        color: black;
         display: flex;
         align-items: center;
         
@@ -107,6 +163,44 @@ nav {
      }
 }
 
+.contactform1 {
+    width: 50%;
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        
+        input[type=text] {
+            width: 60%;
+            margin: 0 auto;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        input[type=textarea] {
+            width: 60%;
+            margin: 0 auto;
+            padding: 0.75rem;
+            padding-bottom: 7rem;
+            margin-bottom: 1rem;
+        }
+
+        input[type=submit] {
+            width: 30%;
+            margin: 0 auto;
+            padding: 1rem;
+            color: black;
+            background: linear-gradient(to right, #D3212D, #3B7A57);
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #3B7A57
+            }
+        }
+     }
+}
+
 @media screen and (max-width: 768px) {
     
     .navlist {
@@ -130,6 +224,15 @@ nav {
             }
         }
     }
+
+
+    .contactform1 {
+        form {
+            input[type=submit] {
+                width: 50%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -146,7 +249,20 @@ nav {
         }
     }
 
+    .contacttext1 {
+        width: 100%;
+
+        p {
+            font-size: 100%;
+        }
+    }
+
     .contactform {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .contactform1 {
         width: 100%;
         padding-bottom: 3rem;
     }

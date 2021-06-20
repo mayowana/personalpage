@@ -1,20 +1,23 @@
 import styles from "./Marketing.module.scss";
 import { Link } from "react-router-dom";
+import Themecontext from '../themecontext/Themecontext'
 
 const Marketing = () => {
 
   return (
     <>
-      <div className={styles.workbody}>
+    <Themecontext.Consumer>
+      {(mode) =>
+      <div mode = {mode} className={mode ? styles.workbody : styles.workbody1}>
         <header className={styles.header}>
           <nav className={styles.aboutnav}>
-            <Link to="/" className={styles.logobox}>
+            <Link to="/" className={mode ? styles.logobox : styles.logobox1}>
               <p>Back to home</p>
             </Link>
           </nav>
           <div className={styles.hero}>
             <div className={styles.herotext}>
-              <h2 className={styles.headtwo}>Designing growth that works, from strategy to execution.</h2>
+              <h2 className={mode ? styles.headtwo : styles.headtwo1}>Designing growth that works, from strategy to execution.</h2>
               <p>
                 I'm a full-stack marketer with expertise in Product, Digital,
                 Content and Growth marketing as well as front-end web
@@ -67,7 +70,7 @@ const Marketing = () => {
                 <li>Tecno</li>
               </ul>
 
-              <div className={styles.buttons}>
+              <div className={mode ? styles.buttons : styles.buttons1}>
                 <Link
                   to={{ pathname: "https://github.com/mayowana" }}
                   target="_blank"
@@ -87,6 +90,8 @@ const Marketing = () => {
           </div>
         </header>
       </div>
+      }
+      </Themecontext.Consumer>
     </>
   );
 };

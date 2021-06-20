@@ -7,6 +7,11 @@ html {
   color: white;
 }
 
+.workbody1 {
+  background-color: white;
+  color: black;
+}
+
 nav {
   height: 6rem;
   width: 75%;
@@ -20,6 +25,12 @@ nav {
   color: white;
   text-decoration: none;
 }
+
+.logobox1 {
+  color: black;
+  text-decoration: none;
+}
+
 
 .hero {
   display: flex;
@@ -56,6 +67,15 @@ nav {
       -webkit-text-fill-color: transparent;
 }
 
+.headtwo1 {
+  background: -webkit-linear-gradient(#9F2B68,#AB274F);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+
+
 .buttons {
   display: flex;
   margin-top: 3rem;
@@ -67,6 +87,34 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 150%;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+
+  a:first-of-type {
+    margin-right: 2rem;
+  }
+}
+
+.buttons1 {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  a {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+
+    &:hover {
+      color: white;
+      background-color: black;
+    }
   }
 
   a:first-of-type {

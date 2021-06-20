@@ -1,18 +1,18 @@
-import { useState } from "react";
 import styles from "./IntroPage.module.scss";
 import { Link } from "react-router-dom";
 import { BsSun, BsMoon } from "react-icons/bs";
+import Themecontext from '../themecontext/Themecontext';
 
-const IntroPage = () => {
-  const [mode, setMode] = useState(true);
+const IntroPage = ({setTheme}) => {
 
   return (
-    <>
-      <div className={mode ? styles.mainpage : styles.mainpage2}>
+    <Themecontext.Consumer>
+      {(mode) => 
+      <div mode={mode} className={mode ? styles.mainpage : styles.mainpage2}>
         {mode ? (
-          <BsSun className={styles.icons} onClick={() => setMode(false)} />
+          <BsSun className={styles.icons} onClick={setTheme}/>
         ) : (
-          <BsMoon className={styles.icons2} onClick={() => setMode(true)} />
+          <BsMoon className={styles.icons2} onClick={setTheme}/>
         )}
         <h1>mayowageorge.com</h1>
         <div className={styles.links}>
@@ -34,7 +34,8 @@ const IntroPage = () => {
           </Link>
         </div>
       </div>
-    </>
+}
+    </Themecontext.Consumer>
   );
 };
 

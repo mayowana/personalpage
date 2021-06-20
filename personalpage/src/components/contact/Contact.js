@@ -3,6 +3,7 @@ import {useState} from 'react'
 import { Link} from "react-router-dom";
 import emailjs from 'emailjs-com';
 import { GrMail, GrLinkedin, GrTwitter, GrInstagram } from "react-icons/gr";
+import Themecontext from '../themecontext/Themecontext'
 
 const Contact = () => {
 
@@ -33,23 +34,25 @@ const Contact = () => {
 
   return (
     <>
-      <div className={styles.contactbox}>
-        <div className={styles.navbox}>
+    <Themecontext.Consumer>
+      {(mode) =>
+      <div mode={mode} className={mode ? styles.contactbox : styles.contactbox1}>
+        <div className={mode ? styles.navbox : styles.navbox1}>
           <nav>
-          <Link to="/" className={styles.logobox}>
+          <Link to="/" className={mode ? styles.logobox : styles.logobox1}>
               <p>Back to home</p>
             </Link>
           </nav>
         </div>
         <div className={styles.contactbody}>
-          <div className={styles.contacttext}>
+          <div className={mode ? styles.contacttext : styles.contacttext1}>
             <h2>What would you like to talk about?</h2>
             <p>
               Depending on my availabilty, I may be open to full or part-time
               roles, advisory roles and speaking engagements. You can reach me
               through the following channels, or by filling the form.
             </p>
-            <div className={styles.socialbox}>
+            <div className={mode ? styles.socialbox : styles.socialbox1}>
               <a href="mailto:themayowageorge@gmail.com">
                 <GrMail />
                 <p>themayowageorge@gmail.com</p>
@@ -68,7 +71,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div className={styles.contactform}>
+          <div className={mode ? styles.contactform : styles.contactform1}>
               <form onSubmit={sendEmail}>
                   <input type="text" required placeholder="Your name" value={pname} onChange={(e) => setPname(e.target.value)}></input>
                   <input type="text" required placeholder="Your email" value={pmail} onChange={(e) => setPmail(e.target.value)}></input>
@@ -78,6 +81,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      }
+      </Themecontext.Consumer>
     </>
   );
 };
